@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   
+
+
+
+
+     <!--  Application Details Start -->
+     <div class="w-full bg-grey-500">
+        <div class="container mx-auto py-8">
+            <div class="w-96 mx-auto bg-white rounded shadow">
+
+                <div class="mx-16 py-4 px-8 text-black text-xl font-bold border-b border-grey-500">Primary Stage
+                </div>
+
+                <form name="first_stage_input_form" id="#" action="result">
+                    <div class="py-4 px-8">
+
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2">Fever:</label>
+                            <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="text"
+                                name="n1" id="#" value="" placeholder="Enter 0 for No,1 for Yes">
+                     
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2">Cough:</label>
+                            <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="text"
+                                name="n2" id="#" value="" placeholder="Enter 0 for No,1 for Yes">
+                     
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2">Fatigue:</label>
+                            <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="text"
+                                name="n3" id="#" value="" placeholder="Enter 0 for No,1 for Yes">
+                     
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2">Difficulty Breathing:</label>
+                            <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="text"
+                                name="n4" id="#" value="" placeholder="Enter 0 for No,1 for Yes">
+                     
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2">Blood Pressure:</label>
+                            <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="text"
+                                name="n5" id="#" value="" placeholder="Enter Low for 1,Normal for 2,High for 3">
+                     
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2">Cholesterol Level:</label>
+                            <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="text"
+                                name="n6" id="#" value="" placeholder="Enter Low for 1,Normal for 2,High for 3">
+                     
+                        </div>
+                        <div class="mb-4">
+
+                            {% comment %} <input class="mb-2 mx-16 rounded-full py-1 px-24 bg-gradient-to-r from-green-400 to-blue-500  type="submit"> {% endcomment %}
+                            <button type="submit"
+                                class="mb-2 mx-16 rounded-full py-1 px-24 bg-gradient-to-r from-green-400 to-blue-500 ">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <h1 class="text-center text-4xl font-black text-gray-900 dark:text-white text-red-600 py-3.5 mb-4">Primary Disease: {{result2}}</h1>
+
+        </div>
+
+    </div>
+</body>
+</html>
